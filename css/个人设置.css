@@ -1,0 +1,254 @@
+.nav-main-box .attr-box{
+    display: none;
+}
+#main{
+    width: 100%;
+    background: #fff;
+}
+#main .inner{
+    padding-top: 15px;
+    padding-bottom: 60px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left_slide{
+    width: 170px;
+    float: left;
+    background-color: #fafafa;
+    border: 1px solid #eeeeee;
+}
+.pcenter_userhead_content{
+    height: 140px;
+    position: relative;
+    padding: 30px 20px 0 20px;
+}
+.header_info{
+    width: 130px;
+    height: 105px;
+    border-bottom: 1px solid #eeeeee;
+}
+.header_avatar{
+    width: 94px;
+    height: 94px;
+    background: url("../img/idid_ie4giobrme2gcndehezdambqgiyde_60x60.png") no-repeat center center;
+    border-radius: 1000px;
+    overflow: hidden;
+    padding-left: 16px;
+}
+.header_avatar a{
+    display: block;
+    width: 94px;
+    height: 94px;
+    position: relative;
+    border-radius: 1000px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.header_info_mask{
+    width: 94px;
+    height: 94px;
+    position: absolute;
+    background: url("../img/idid_ifrdsojrgm3tsndehezdambqmeyde_94x94.png") no-repeat;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.header_avatar a p{
+    width: 90px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background: rgba(70,70,70,0.5);
+    color: #fff;
+    font-weight: normal;
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    -ms-transform: translateY(34px);
+    -moz-transform: translateY(34px);
+    -webkit-transform: translateY(34px);
+    transform: translateY(34px);
+    -ms-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+.username{
+    height: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+}
+.zhedie{
+    border: 3px solid pink;
+    padding: 3px;
+    box-shadow: 0 5px 5px rgba(0,0,0,.1);
+    margin-top: 30px;
+}
+dl{
+    background: #fff;
+}
+.zhedie dt s{
+    width: 9px;
+    height: 5px;
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    right: 17px;top: 17px;
+    -moz-transition: -moz-transform .2s linear;
+    -webkit-transition: -webkit-transform .2s linear;
+    background: url(../img/car_sprite.png) no-repeat;
+}
+.zhedie dt{
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #f7eee6;
+    background-repeat: repeat-x;
+    background-position: left -20px;
+}
+.zhedie dt a{
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 0 12px;
+    height: 36px;
+    line-height: 36px;
+    position: relative;
+}
+.zhedie dd{
+    padding: 8px 12px;
+    line-height: 22px;
+    width: 163px;
+    overflow: hidden;
+    border-bottom: 1px solid #f7eee6;
+}
+.zhedie ul{
+    width: 170px;
+}
+.zhedie ul li{
+    width: 80px;
+    height: 26px;
+    overflow: hidden;
+    padding-right: 5px;
+    text-align: left;
+}
+.setting{
+    width: 1013px;
+    border: 1px solid #eee;
+    float: right;
+}
+.settings_title{
+    height: 29px;
+    border-bottom: 1px solid #eee;
+    padding-top: 12px;
+    padding-left: 15px;
+    font-size: 18px;
+    color: #333;
+    background-color: #fafafa;
+    display: block;
+    font-weight: normal;
+}
+.setPersonal{
+    margin-top: 40px;
+    margin-bottom: 150px;
+    position: relative;
+}
+.form-list,.gender{
+    margin-bottom: 24px;
+    margin-left: 100px;
+    color: #999;
+}
+.account-label{
+    color: #666;
+    margin-right: 10px;
+    width: 73px;
+    text-align: right;
+    float: left;
+    line-height: 35px;
+}
+.form-list input{
+    height: 33px;
+    width: 393px;
+    vertical-align: middle;
+    color: #999;
+    border: 1px solid #ddd;
+    padding: 0;
+    padding-left: 10px;
+}
+.form-list strong{
+    padding-left: 10px;
+    color: #666;
+    line-height: 20px;
+    display: inline-block;
+    height: 20px;
+    font-weight: normal;
+}
+.regular-radio {
+    /*display: none;*/
+}
+.regular-radio:checked + .regular-radio-label {
+    color: #ff3366;
+    background-color: #ff3366;
+}
+.regular-radio + .regular-radio-label {
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ff3366;
+    padding: 6px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    margin-top: 9px;
+}
+.select-container {
+    display: inline-block;
+    width: 115px;
+    height: 33px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    background: url(../img/idid_ifrdqnlcg4ygczdehezdambqmeyde_25x40.png) no-repeat right;
+    margin-right: 10px;
+}
+.select-container select {
+    background: transparent;
+    border: none;
+    padding-left: 10px;
+    width: 135px;
+    height: 100%;
+    color: #999;
+}
+.job-select {
+    width: 138px;
+}
+.job-select select {
+    width: 157px;
+}
+.form-list textarea {
+    color: #999;
+    padding: 10px;
+}
+.introduction {
+    width: 393px;
+    height: 133px;
+    border: 1px solid #ddd;
+}
+.form-list .introduction-error {
+    margin-left: 83px;
+    padding: 0;
+    background: none;
+}
+.ext_submit {
+    margin-left: 183px;
+}
+.ext_submit {
+    width: 100px;
+    height: 30px;
+    background-color: #f36;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+

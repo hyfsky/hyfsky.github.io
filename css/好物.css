@@ -1,0 +1,119 @@
+.nav-main-box .attr-box{
+    display: none;
+}
+/*内容区域*/
+#main{
+    width: 100%;
+}
+#main .inner {
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+}
+.tab_sel_list{
+    background: #fff;
+    width: 800px;
+    height: 80px;
+    font-size: 0;
+    margin: auto;
+}
+.tab_sel_list ul{
+    line-height: 75px;
+}
+.tab_sel_list ul li{
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+.tab_sel_list a{
+    padding: 32px 30px;
+    color: #333;
+    font-size: 14px;
+}
+.tab_sel_list li:last-child>a{
+    padding: 32px 36px;
+}
+.tab_sel_list li.select{
+    background: #F33866;
+    color: #fff;
+    transition: all 0.5s cubic-bezier(0, 1.54, 0.26, 1.05);
+}
+.tab_con_sel{
+    position: relative;
+    width: 1000px;
+    min-height: 1000px;
+    margin: 20px auto;
+}
+.tab_list_all{
+    display: none;
+}
+.list_sel{
+    width: 490px;
+    display: block;
+    height: 480px;
+    border: 1px solid #eee;
+    float: left;
+    margin: 0 8px 20px 0;
+}
+.w_490{
+    width: 490px;
+    height:280px;
+}
+.wh_142{
+    width: 142px;
+    height: 142px;
+}
+.twi_wrap a{
+    display: inline-block;
+    margin: 10px 0px 0 15px;
+}
+.big_img{
+    position: relative;
+    width: 490px;
+    height:280px;
+    overflow: hidden;
+}
+.banner_mask{
+    width: 100%;
+    height: 218px;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    bottom: -218px;
+    transition: all 0.5s cubic-bezier(0, 1.54, 0.26, 1.05);
+    -webkit-animation: all 0.5s cubic-bezier(0, 1.54, 0.26, 1.05);
+    -moz-transition: all 0.5s cubic-bezier(0, 1.54, 0.26, 1.05);
+    -o-transition: all 0.5s cubic-bezier(0, 1.54, 0.26, 1.05);
+}
+.list_sel:hover .banner_mask{
+    bottom: 0;
+}
+.banner_mask p{
+    color: #fff;
+    text-align: center;
+}
+.market_title{
+    font-size: 24px;
+    padding-top: 144px;
+}
+.goods_num{
+    margin-top: 14px;
+    font-size: 16px;
+}
+.goods_num span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.goods_num .go_icon{
+    width: 0;
+    height: 0;
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+    border-width: 4px 0 4px 6px;
+    margin-left: 6px;
+}
+.twi_price{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}

@@ -1,0 +1,155 @@
+.nav-main-box .attr-box{
+    display: none;
+}
+/*轮播图*/
+#banner{
+    width:100%;
+    margin-top:20px;
+}
+#banner .inner{
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+.imageflow{
+    overflow:hidden;
+    position:relative;
+    text-align:left;
+    visibility:hidden;
+    width:100%;
+}
+.imageflow img{
+    border:none;
+    position:absolute;
+    top:0px;
+    visibility:hidden;
+    -ms-interpolation-mode:bicubic;
+}
+.imageflow p{
+    margin:0 auto;
+    text-align:center
+}
+.imageflow .loading{
+    border:1px solid #ccc;
+    height:15px; left:50%;
+    margin-left:-106px;
+    padding:5px;
+    position:relative;
+    visibility:visible;
+    width:200px;
+}
+.imageflow .loading_bar{
+    background:#ccc;
+    height:15px;
+    visibility:visible;
+    width:1%;
+}
+.imageflow .caption{
+    font-weight:bold;
+    position:relative;
+    text-align:center;
+    z-index:10000;
+}
+.imageflow .scrollbar{
+    border-bottom:1px solid #b3b3b3;
+    position:relative;
+    visibility:hidden;
+    z-index:10001;
+    height:1px;
+}
+.imageflow .slider{
+    background: #fff;
+    height:14px;
+    margin:-6px 0 0 -7px;
+    position:absolute;
+    width:14px;
+    z-index:10002;
+}
+.imageflow .images{
+    overflow:hidden;
+    white-space:nowrap;
+}
+.imageflow .button{
+    cursor:pointer;
+    height:17px;
+    position:relative;
+    width:17px;
+}
+.imageflow .previous{
+    background:url("../img/1_idid_ifrggnrqgrrtanbymizdambqmeyde_36x44.png") top left no-repeat;
+    float:left;
+    margin:-7px 0 0 -30px;
+}
+.imageflow .next{
+    background:url("../img/2_idid_ifqtkmjvgbsdanbymizdambqgyyde_36x44.png") top left no-repeat;
+    float:right;
+    margin:-7px -30px 0 30px;
+}
+/*内容*/
+#main{
+    width: 100%;
+    margin-top:20px ;
+}
+#main .inner{
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+.brand_title{
+    width: 365px;
+    margin: 60px auto 35px auto;
+    text-align: center;
+    font-size: 24px;
+}
+.new_list>li{
+    width: 1200px;
+    margin-bottom: 40px;
+}
+.header_img{
+    float: left;
+    text-align: center;
+}
+.new_product{
+    width: 190px;
+    height: auto;
+    float: left;
+    margin-left: 18px;
+    margin-bottom: 30px;
+}
+.new_product:hover{
+    box-shadow: 10px 10px 10px grey;
+    -webkit-box-shadow: 10px 10px 10px grey;
+    -moz-box-shadow: 10px 10px 10px grey;
+    -ms-box-shadow:10px 10px 10px grey;
+    -o-box-shadow: 10px 10px 10px grey;
+    transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+}
+.product_show{
+    display: inline-block;
+    width: 190px;
+    height: 285px;
+}
+.product_show img{
+    width: 190px;
+    height: 285px;
+}
+ .new_product .product_title{
+    width: 167px;
+    margin: 17px auto auto auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+     display: inline-block;
+}
+.product_price{
+    margin-top: 10px;
+    text-align: center;
+}
+.product_price span{
+    font-size: 20px;
+    color: #ff3366;
+}

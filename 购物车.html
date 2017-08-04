@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的购物车</title>
+    <link rel="icon" href="img/1_7d026282ff00a259b6a7b90eee6d_48_48.c5.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/美丽优选公共样式.css">
+    <link rel="stylesheet" href="css/购物车.css">
+</head>
+<body>
+<!--店铺顶部-->
+<div id="header">
+    <div class="inner clearfix">
+        <a href="首页.html" class="beauty_home" target="_blank">美丽说首页</a>
+        <ul class="top_left_nav">
+            <li class="item register">
+                <a href="注册.html" target="_blank">注册</a>
+            </li>
+            <li class="item login">
+                <a href="javascript:;" target="_blank">登录</a>
+            </li>
+            <!--登录信息-->
+            <li class="enter_mes item">
+                <a href="javascript:;"><b class="name_enter"></b>已登录</a>
+            </li>
+            <li class="item my_list bor_left">
+                <a href="javascript:;" target="_blank">我的订单</a>
+            </li>
+            <li class="item my_cart bor_left">
+                <a href="javascript:;" target="_blank">
+                    <span class="cart_info">购物车</span>
+                </a>
+                <span class="cart_con_tips"></span>
+                <div class="cart_con_empty">购物车里没有商品!</div>
+            </li>
+            <li class="item my_hlep bor_left">
+                <a href="javascript:;" target="_blank">帮助中心</a>
+                <em class="icon_1"></em>
+                <ul class="hlep_con">
+                    <li class="hlep_list">
+                        <a href="javascript:;" target="_blank">买家服务</a>
+                    </li>
+                    <li class="hlep_list">
+                        <a href="javascript:;" target="_blank">商家服务</a>
+                    </li>
+                    <li class="hlep_list">
+                        <a href="javascript:;" target="_blank">规则中心</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="item shop_after bor_left">
+                <a href="javascript:;" target="_blank">商家后台</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--内容区域-->
+<div id="main">
+    <div class="inner clearfix">
+        <div class="left_logo">
+            <img src="img/2af7c3c13e62a76ba31fd6dcf093_144_39.c5.png" alt="">
+        </div>
+        <div class="right_step">
+            <div class="step">
+                <div class="go_step"></div>
+                <i class="step_1 step_all">
+                    1
+                    <span class="step_tips pink">购物车</span>
+                </i>
+                <i class="step_2 step_all">
+                    2
+                    <span class="step_tips">确认订单</span>
+                </i>
+                <i class="step_3 step_all">
+                    3
+                    <span class="step_tips">支付</span>
+                </i>
+                <i class="step_4 step_all">
+                    <img src="img/right.png" alt="" height="23" width="23">
+                    <span class="step_tips">完成</span>
+                </i>
+            </div>
+        </div>
+    </div>
+</div>
+<!--购物车区域-->
+<div id="shop_con">
+    <div class="inner">
+        <!--空购物车-->
+        <div class="cart_empty">
+            <div class="cart_empty_icon"></div>
+            <h5 class="mb20">您的购物车还是空的，赶快去挑选商品吧！</h5>
+            <ul class="cart_empty_list">
+                <li>去看看大家都喜欢的
+                    <a href="javascript:;" class="cart_link red">最热</a>
+                </li>
+                <li>去看看正在折扣中的优品
+                    <a href="javascript:;" class="cart_more red">团购</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--购物车有内容-->
+<div id="shop_box">
+    <div class="inner">
+        <div class="catbox">
+            <table id="cartTable">
+                <thead>
+                <tr>
+                    <th><label>
+                        <input class="check-all check" type="checkbox"/>&nbsp;&nbsp;全选</label></th>
+                    <th>商品</th>
+                    <th>商品信息</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>小计</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <td class="group_head" colspan="7">
+                    <input class="check-one check" type="checkbox"/>
+                    <label class="shop_light">店铺：</label>
+                    <a href="javascript:;" target="_blank" class="shop_name_con">美丽优选</a>
+                    <a href="javascript:;" class="link_man">联系客服</a>
+                    <div class="cart_tip_red cart_hidetip">
+                        <div class="cart_tip_hd">
+                            <span>领取</span>
+                            <i class="cart_icon_redarrow">√</i>
+                        </div>
+                        <div class="cart_hidden">
+                            <p class="got_cp">
+                                <a href="javascript:;" class="close"></a>
+                            </p>
+                            <div class="coupons">
+                                <ul>
+                                    <li class="clearfix">
+                                        <span class="money_5">5元</span>
+                                        <p class="money_98">购物满98元立减</p>
+                                        <p class="money_time">2016.12.14-2016.12.19</p>
+                                        <span class="money_no">无需领取</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="money_5">15元</span>
+                                        <p class="money_98">购物满198元立减</p>
+                                        <p class="money_time">2016.12.14-2016.12.19</p>
+                                        <span class="money_no">无需领取</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="money_5">30元</span>
+                                        <p class="money_98">购物满298元立减</p>
+                                        <p class="money_time">2016.12.14-2016.12.19</p>
+                                        <span class="money_no">无需领取</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="cart_tip_red red">优惠券：</span>
+                    <ul class="discount cart_tip_red">  <li><i></i>满98元减5</li>  </ul>
+                </td>
+                <!--<tr>
+                    <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+                    <td class="goods"><img src="img/upload_7ged47k1lblid16k6felj4268dlh4_232x186.png" alt=""/><span>Casio/卡西欧 EX-TR350</span></td>
+                    <td class="message">颜色：<span class="color">蓝色</span></td>
+                    <td class="price">5999.88</td>
+                    <td class="count"><span class="reduce">-</span>
+                        <input class="count-input" type="text" value="1"/>
+                        <span class="add">+</span></td>
+                    <td class="subtotal">5999.88</td>
+                    <td class="operation"><span class="delete">删除</span></td>
+                </tr>
+                <tr>
+                    <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+                    <td class="goods"><img src="img/upload_6lgd5ej2abb69g54660ijll1hf65i_232x380.png" alt=""/><span>Canon/佳能 PowerShot SX50 HS</span></td>
+                    <td class="message">颜色：<span class="color">蓝色</span></td>
+                    <td class="price">3888.50</td>
+                    <td class="count"><span class="reduce">-</span>
+                        <input class="count-input" type="text" value="1"/>
+                        <span class="add">+</span></td>
+                    <td class="subtotal">3888.50</td>
+                    <td class="operation"><span class="delete">删除</span></td>
+                </tr>
+                <tr>
+                    <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+                    <td class="goods"><img src="img/upload_3fjfea948d413hjfh69i7212hej9f_232x380.png" alt=""/><span>Sony/索尼 DSC-WX300</span></td>
+                    <td class="message">颜色：<span class="color">蓝色</span></td>
+                    <td class="price">1428.50</td>
+                    <td class="count"><span class="reduce">-</span>
+                        <input class="count-input" type="text" value="1"/>
+                        <span class="add">+</span></td>
+                    <td class="subtotal">1428.50</td>
+                    <td class="operation"><span class="delete">删除</span></td>
+                </tr>
+                <tr>
+                    <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+                    <td class="goods"><img src="img/upload_1k99a9f5755087lk2ld4f3l29a0ka_218x189.png" alt=""/><span>Fujifilm/富士 instax mini 25</span></td>
+                    <td class="message">颜色：<span class="color">蓝色</span></td>
+                    <td class="price">640.60</td>
+                    <td class="count"><span class="reduce">-</span>
+                        <input class="count-input" type="text" value="1"/>
+                        <span class="add">+</span></td>
+                    <td class="subtotal">640.60</td>
+                    <td class="operation"><span class="delete">删除</span></td>
+                </tr>-->
+                </tbody>
+            </table>
+            <div class="foot" id="foot">
+                <label class="fl select-all"><input type="checkbox" class="check-all check"/>&nbsp;&nbsp;全选</label>
+                <a href="javascript:;" class="remove_all">删除</a>
+                <a href="javascript:;" class="remove_empty">清空失效产品</a>
+                <div class="fr closing">去 付 款</div>
+                <input type="hidden" id="cartTotalPrice"/>
+                <div class="total">总计：<span class="big_red">￥</span><span id="priceTotal" class="big_red">0.00</span></div>
+                <div class="selected" id="selected">共有<span id="selectedTotal">0</span>款商品</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部样式-->
+<div id="g-footer">
+    <p title="mofa015027">
+        <a href="javascript:;" target="_blank">美丽说</a>
+        © 2016 Meilishuo.com,All Rights Reserved.
+    </p>
+    <div class="icons">
+        <a class="vs" href="javascript:;"></a>
+        <a class="mc" href="javascript:;"></a>
+        <a class="up" href="javascript:;"></a>
+        <a class="pa" href="javascript:;" target="_blank"></a>
+        <a class="kx" href="javascript:;" target="_blank"></a>
+        <a class="pc" href="javascript:;" target="_blank"></a>
+    </div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/美丽优选.js"></script>
+<script src="js/购物车.js"></script>
+</html>
